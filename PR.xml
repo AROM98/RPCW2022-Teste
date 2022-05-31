@@ -1,0 +1,23 @@
+-> Ex1
+
+Para este exericio decidir dividir os dados fornecidos em 2 ficheiros, um para as cidades e outro para as ligações.
+Desta maneira o acesso a cada um dos objectos torna-se mais de implementar.
+Primeiramente for criado uma web app do Express com o comando:
+ npx express-generator mapas --view=pug
+  e instalado o mongoise com o comando:
+npm i mongoose --save   
+
+Decidi também não usar as views fornecidas e apenas mostrar as respostas na pagina. Sendo assim apaguei tudo o que tinha de views no 
+projecto criado. 
+O servidor responde na porta 3000. Foram feitas as configurações para a ligação com o mongo na base de dados MAPA2022 e coleções cidades
+e ligacoes.
+
+Para as queries ao mongo foram criadas as pastas models e controllers. A pasta models contém 2 ficheiros para aceder a cada coleção criada.
+Na pasta controllers tem um ficheiro que usa os outros 2 da pasta models para efectuar as queries ao mongo.
+Ao mesmo tempo foi sendo alterado o ficheiro index.js para criar os endereçamentos pedidos no enunciado.
+
+Para executar a web app, convém instalar os pacotes com o comando "npm i" e o outro mencionado anteriormente.
+Depois no browser como o servidor está a escuta na porta 3000, podemos aceder com "localhost:3000/api/", seguido da rota desejada.
+
+-> Ex2
+
